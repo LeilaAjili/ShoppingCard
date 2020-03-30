@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!---Inclure bootstrap---------->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!---Titre de la page---------->
+        <title> Shopping Card</title>
+        <!---Inclure fichier css---------->
+        <link rel="stylesheet" href="style.css">
+        <!---responsive viewport meta tag---------->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!---Pour les boutons du panier---------->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+       
+        <header>
+            <!---DEBUT NAVBAR---------->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">SHOPPING CARD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                      <!--------DEBUT CONTAINER----------->
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1">
+                    <li class="nav-item active">
+                        
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        
+                    </li>
+                        </div>
+                        <div class="col-lg-1">
+                    <li class="nav-item">
+                        
+                      <a class="nav-link" href="#">About</a>
+                        
+                    </li>
+                        </div>
+                        <div class="col-lg-1">
+                    <li class="nav-item">
+                        
+                      <a class="nav-link" href="#">Contact</a> </div>
+                    </li>
+                    </div>
+                    <div class="col-lg-offset-8 col-lg-1">
+                    <li class="nav-item dropdown x">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </div>    
+                    </li>
+                    </div>
+                  </ul>
+                  </div>
+                  <!--------FIN CONTAINER----------->
+                </div> </div>
+              </nav>
+              <!---FIN NAVBAR---------->
+        <main>
+<section class="section1"><!--------CAROUSEL---------->
+    <div class="container">
+        <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-select-201911_FMT_WHH?wid=2000&hei=2000&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1573825332486" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWUK2_VW_PF+watch-40-alum-gold-nc-5s_VW_PF_WF_CO?wid=1400&hei=1400&fmt=p-jpg&qlt=80&op_usm=0.5,0.5&.v=1572047258567,1569365628506" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=1144&hei=1144&fmt=jpeg&qlt=80&op_usm=0.5%2C0.5&.v=1572990352299" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only arrow">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only arrow">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-1"></div>
+   </div></div>
+</section>
+<!----------------------------------------------------------------->
+<section><!-----------------PANIER---------->
+    <div class="container container1" id="container1">
+        <div class="row align-items-center background">
+            <div class="col-lg-1 background"></div>
+            <div class="col-lg-10 background font ">
+              <div class="total-pa"> TOTAL PANIER = 0</div> 
+            </div>
+            <div class="col-lg-1 background"></div>
+            </div>
+        <div class="row">
+    <div class="col-lg-1 background"></div>
+    <div class="col-lg-10 ">
+        <div class="row align-items-center">
+            <div class="col-lg-2">
+                <a href="#"><img src="favoris.jpg" height="50px" width="50px"></a>
+            </div>
+        <!--------PRODUIT1--------------->
+            <div class="col-lg-3">
+                <img src="iWatch.jpeg"height="150px" width="150px">
+            </div>
+            <div class="col-lg-3 font">I WATCH PINK </div>
+            <div class="col-lg-2 correct ">
+                <div class="qty mt-5 compteur">
+                    <span class="minus bg-dark" >-</span>
+                 
+                  <p class="q-watch1 count">0</p>
+                    <span class="plus  bg-dark">+</span>
+                </div>
+            </div>
+            <div class="col-lg-2 font prix">300</div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-2">
+                <a href="#"><img src="favoris.jpg" height="50px" width="50px"></a>
+            </div>
+            <!--------FIN PRODUIT1--------------->
+            <!--------PRODUIT2--------------->
+            <div class="col-lg-3">
+                <img src="iWatch2.jpg"height="150px" width="150px">
+            </div>
+            <div class="col-lg-3 font">I WATCH GOLD</div>
+            <div class="col-lg-2 correct">
+                <div class="qty mt-5 compteur">
+                    <span class="minus bg-dark">-</span>
+                    <p class="q-watch2 count">0</p>
+                    <span class="plus bg-dark" >+</span>
+                </div>
+            </div>
+            <div class="col-lg-2 font prix">450</div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-2">
+                <a href="#"><img src="favoris.jpg" height="50px" width="50px"></a>
+            </div>
+            <!--------FIN PRODUIT2--------------->
+            <!--------PRODUIT3------------------->
+            <div class="col-lg-3">
+                <img src="iWatch3.jpg"height="150px" width="150px">
+            </div>
+            <div class="col-lg-3 font">I WATCH BLACK</div>
+            <div class="col-lg-2 correct">
+                <div class="qty mt-5 compteur">
+                    <span class="minus bg-dark">-</span>
+                    <span class="q-watch3 count">0</span>
+                    <span class="plus bg-dark spc" >+</span>
+                </div>
+            </div>
+            <div class="col-lg-2 font prix">600</div>
+        </div>
+        <!--------FIN PRODUIT3--------------->
+        </div>
+        <div class="col-lg-1 background"></div>
+       </section>
+        </main>
+        <!---JS pour bootstrap--------->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!---Inclure fichier JS---------->
+        <script type="text/javascript" src="main.js"></script>
+
+    </body>
+</html>
